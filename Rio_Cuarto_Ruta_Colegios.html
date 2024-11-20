@@ -1,0 +1,824 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_b502a916b6243aa851ebef6c081bed59 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_b502a916b6243aa851ebef6c081bed59" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_b502a916b6243aa851ebef6c081bed59 = L.map(
+                "map_b502a916b6243aa851ebef6c081bed59",
+                {
+                    center: [-33.1226, -64.3493],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 13,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_fc513eb79b6b6f1594e1f1a7f7a230d6 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_b502a916b6243aa851ebef6c081bed59);
+        
+    
+            var marker_20a6f8a72fa096db030bf5f131fb9998 = L.marker(
+                [-33.1245, -64.3497],
+                {}
+            ).addTo(map_b502a916b6243aa851ebef6c081bed59);
+        
+    
+        var popup_a0c718c4c6a6159837741f4a977c3d8c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_be5dd7379c23f3268a26209d7f96585f = $(`<div id="html_be5dd7379c23f3268a26209d7f96585f" style="width: 100.0%; height: 100.0%;">Punto de partida<br>San Martín 1069</div>`)[0];
+            popup_a0c718c4c6a6159837741f4a977c3d8c.setContent(html_be5dd7379c23f3268a26209d7f96585f);
+        
+
+        marker_20a6f8a72fa096db030bf5f131fb9998.bindPopup(popup_a0c718c4c6a6159837741f4a977c3d8c)
+        ;
+
+        
+    
+    
+            marker_20a6f8a72fa096db030bf5f131fb9998.bindTooltip(
+                `<div>
+                     Punto de partida
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_3d302ac695c181bfb314f92227c6e490 = L.marker(
+                [-33.124, -64.35],
+                {}
+            ).addTo(map_b502a916b6243aa851ebef6c081bed59);
+        
+    
+        var popup_977c66f6e026189a96c0840bf02bbb81 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a8f76ef5148dc470d2d7d993268af200 = $(`<div id="html_a8f76ef5148dc470d2d7d993268af200" style="width: 100.0%; height: 100.0%;">Colegio San Buenaventura<br>San Martín 250</div>`)[0];
+            popup_977c66f6e026189a96c0840bf02bbb81.setContent(html_a8f76ef5148dc470d2d7d993268af200);
+        
+
+        marker_3d302ac695c181bfb314f92227c6e490.bindPopup(popup_977c66f6e026189a96c0840bf02bbb81)
+        ;
+
+        
+    
+    
+            marker_3d302ac695c181bfb314f92227c6e490.bindTooltip(
+                `<div>
+                     Colegio San Buenaventura
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_3cbed5f7aa1c24d50aa42ed654e9964d = L.marker(
+                [-33.1195, -64.3523],
+                {}
+            ).addTo(map_b502a916b6243aa851ebef6c081bed59);
+        
+    
+        var popup_d9cbf13d7b998b357411b29838e31ab4 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_8fa78ac01410db6e603da7f5896d5aae = $(`<div id="html_8fa78ac01410db6e603da7f5896d5aae" style="width: 100.0%; height: 100.0%;">Colegio Galileo Galilei<br>Alvear 1040</div>`)[0];
+            popup_d9cbf13d7b998b357411b29838e31ab4.setContent(html_8fa78ac01410db6e603da7f5896d5aae);
+        
+
+        marker_3cbed5f7aa1c24d50aa42ed654e9964d.bindPopup(popup_d9cbf13d7b998b357411b29838e31ab4)
+        ;
+
+        
+    
+    
+            marker_3cbed5f7aa1c24d50aa42ed654e9964d.bindTooltip(
+                `<div>
+                     Colegio Galileo Galilei
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_f51dff89b70694665dfbf4af480f4b05 = L.marker(
+                [-33.1255, -64.3495],
+                {}
+            ).addTo(map_b502a916b6243aa851ebef6c081bed59);
+        
+    
+        var popup_46908c8445e265fd5f56b51715cc88e7 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_0606812728343af92de06602624e0d35 = $(`<div id="html_0606812728343af92de06602624e0d35" style="width: 100.0%; height: 100.0%;">Instituto Hispano Argentino<br>Fotheringham 68</div>`)[0];
+            popup_46908c8445e265fd5f56b51715cc88e7.setContent(html_0606812728343af92de06602624e0d35);
+        
+
+        marker_f51dff89b70694665dfbf4af480f4b05.bindPopup(popup_46908c8445e265fd5f56b51715cc88e7)
+        ;
+
+        
+    
+    
+            marker_f51dff89b70694665dfbf4af480f4b05.bindTooltip(
+                `<div>
+                     Instituto Hispano Argentino
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_551be826da5e993762e40337de23ef82 = L.marker(
+                [-33.1218, -64.348],
+                {}
+            ).addTo(map_b502a916b6243aa851ebef6c081bed59);
+        
+    
+        var popup_96aefcc735d396103cb3ae9c5defef31 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_df767f36e79e800a8d6b2b5b5284bbb3 = $(`<div id="html_df767f36e79e800a8d6b2b5b5284bbb3" style="width: 100.0%; height: 100.0%;">Colegio La Merced<br>Colón 580</div>`)[0];
+            popup_96aefcc735d396103cb3ae9c5defef31.setContent(html_df767f36e79e800a8d6b2b5b5284bbb3);
+        
+
+        marker_551be826da5e993762e40337de23ef82.bindPopup(popup_96aefcc735d396103cb3ae9c5defef31)
+        ;
+
+        
+    
+    
+            marker_551be826da5e993762e40337de23ef82.bindTooltip(
+                `<div>
+                     Colegio La Merced
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_5f5f0c4d97b60eb6519dc7eec7045e54 = L.marker(
+                [-33.1221, -64.3476],
+                {}
+            ).addTo(map_b502a916b6243aa851ebef6c081bed59);
+        
+    
+        var popup_de96fa3b114acd68e6143bc2cb26c1e9 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_de0033374a9fdd18f04ca53268b071cf = $(`<div id="html_de0033374a9fdd18f04ca53268b071cf" style="width: 100.0%; height: 100.0%;">Instituto Santa Eufrasia<br>Colón 773</div>`)[0];
+            popup_de96fa3b114acd68e6143bc2cb26c1e9.setContent(html_de0033374a9fdd18f04ca53268b071cf);
+        
+
+        marker_5f5f0c4d97b60eb6519dc7eec7045e54.bindPopup(popup_de96fa3b114acd68e6143bc2cb26c1e9)
+        ;
+
+        
+    
+    
+            marker_5f5f0c4d97b60eb6519dc7eec7045e54.bindTooltip(
+                `<div>
+                     Instituto Santa Eufrasia
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_fbd80d1983546df8ad69622c595e0adb = L.marker(
+                [-33.1235, -64.3458],
+                {}
+            ).addTo(map_b502a916b6243aa851ebef6c081bed59);
+        
+    
+        var popup_03c023aa00cfeca9e2b6b37a39251d53 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_080bf6a12c3c598b9ecd627d91adb7fc = $(`<div id="html_080bf6a12c3c598b9ecd627d91adb7fc" style="width: 100.0%; height: 100.0%;">Instituto Cristo Rey<br>Constitución 400</div>`)[0];
+            popup_03c023aa00cfeca9e2b6b37a39251d53.setContent(html_080bf6a12c3c598b9ecd627d91adb7fc);
+        
+
+        marker_fbd80d1983546df8ad69622c595e0adb.bindPopup(popup_03c023aa00cfeca9e2b6b37a39251d53)
+        ;
+
+        
+    
+    
+            marker_fbd80d1983546df8ad69622c595e0adb.bindTooltip(
+                `<div>
+                     Instituto Cristo Rey
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ad61503b1214570c6f0106154c623237 = L.marker(
+                [-33.1297, -64.3599],
+                {}
+            ).addTo(map_b502a916b6243aa851ebef6c081bed59);
+        
+    
+        var popup_c510eec3efd92e232959ee871e59e585 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_cee86bf9a4af4b1b996d49c00d1ad2b8 = $(`<div id="html_cee86bf9a4af4b1b996d49c00d1ad2b8" style="width: 100.0%; height: 100.0%;">Instituto Secundario Santa María Teresa Goretti<br>Pasaje Saenz 2851</div>`)[0];
+            popup_c510eec3efd92e232959ee871e59e585.setContent(html_cee86bf9a4af4b1b996d49c00d1ad2b8);
+        
+
+        marker_ad61503b1214570c6f0106154c623237.bindPopup(popup_c510eec3efd92e232959ee871e59e585)
+        ;
+
+        
+    
+    
+            marker_ad61503b1214570c6f0106154c623237.bindTooltip(
+                `<div>
+                     Instituto Secundario Santa María Teresa Goretti
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_f7763749b1f30c0f5779c7ba0eba967c = L.marker(
+                [-33.12, -64.3435],
+                {}
+            ).addTo(map_b502a916b6243aa851ebef6c081bed59);
+        
+    
+        var popup_347f932e89a4868c127de5d8d46239b9 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_138fd22a3a50cc663797d5fc39376aea = $(`<div id="html_138fd22a3a50cc663797d5fc39376aea" style="width: 100.0%; height: 100.0%;">Instituto Colegio Concordia<br>Pedro Vargas 260</div>`)[0];
+            popup_347f932e89a4868c127de5d8d46239b9.setContent(html_138fd22a3a50cc663797d5fc39376aea);
+        
+
+        marker_f7763749b1f30c0f5779c7ba0eba967c.bindPopup(popup_347f932e89a4868c127de5d8d46239b9)
+        ;
+
+        
+    
+    
+            marker_f7763749b1f30c0f5779c7ba0eba967c.bindTooltip(
+                `<div>
+                     Instituto Colegio Concordia
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_307537982efcd15450aa2a2113b98559 = L.marker(
+                [-33.1183, -64.3567],
+                {}
+            ).addTo(map_b502a916b6243aa851ebef6c081bed59);
+        
+    
+        var popup_d8c46f0b0eb6b932809176bf5f108307 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_5bbc7dfba6231ff43c7eda83106a65b7 = $(`<div id="html_5bbc7dfba6231ff43c7eda83106a65b7" style="width: 100.0%; height: 100.0%;">Instituto San Juan de la Cruz<br>Presidente Perón Oeste 1321</div>`)[0];
+            popup_d8c46f0b0eb6b932809176bf5f108307.setContent(html_5bbc7dfba6231ff43c7eda83106a65b7);
+        
+
+        marker_307537982efcd15450aa2a2113b98559.bindPopup(popup_d8c46f0b0eb6b932809176bf5f108307)
+        ;
+
+        
+    
+    
+            marker_307537982efcd15450aa2a2113b98559.bindTooltip(
+                `<div>
+                     Instituto San Juan de la Cruz
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_f4bdfdcd7daaebefee905166802f8957 = L.marker(
+                [-33.1145, -64.3539],
+                {}
+            ).addTo(map_b502a916b6243aa851ebef6c081bed59);
+        
+    
+        var popup_cb90c5e86141caf3780ef11028861b54 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a7d3ba4fc42f09fe2482fd2ff1f2463a = $(`<div id="html_a7d3ba4fc42f09fe2482fd2ff1f2463a" style="width: 100.0%; height: 100.0%;">Colegio Evangélico Nueva Argentina<br>Vicente López 1720</div>`)[0];
+            popup_cb90c5e86141caf3780ef11028861b54.setContent(html_a7d3ba4fc42f09fe2482fd2ff1f2463a);
+        
+
+        marker_f4bdfdcd7daaebefee905166802f8957.bindPopup(popup_cb90c5e86141caf3780ef11028861b54)
+        ;
+
+        
+    
+    
+            marker_f4bdfdcd7daaebefee905166802f8957.bindTooltip(
+                `<div>
+                     Colegio Evangélico Nueva Argentina
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ae254c73085492f2e3a50391a48b193d = L.marker(
+                [-33.1102, -64.3481],
+                {}
+            ).addTo(map_b502a916b6243aa851ebef6c081bed59);
+        
+    
+        var popup_b736591b443a8bcef82070f12c42422e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ba597b1546261a5205fd4bc366610b75 = $(`<div id="html_ba597b1546261a5205fd4bc366610b75" style="width: 100.0%; height: 100.0%;">Instituto Privado La Sagrada Familia<br>Eduardo Jenner 500</div>`)[0];
+            popup_b736591b443a8bcef82070f12c42422e.setContent(html_ba597b1546261a5205fd4bc366610b75);
+        
+
+        marker_ae254c73085492f2e3a50391a48b193d.bindPopup(popup_b736591b443a8bcef82070f12c42422e)
+        ;
+
+        
+    
+    
+            marker_ae254c73085492f2e3a50391a48b193d.bindTooltip(
+                `<div>
+                     Instituto Privado La Sagrada Familia
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_1ca281fe19c9ee9e16332732f47df0ba = L.marker(
+                [-33.1139, -64.3522],
+                {}
+            ).addTo(map_b502a916b6243aa851ebef6c081bed59);
+        
+    
+        var popup_5669c808d59729b0f39f4215eaee2ca1 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_94b25c5737a34c5dcd3c960f6d57adae = $(`<div id="html_94b25c5737a34c5dcd3c960f6d57adae" style="width: 100.0%; height: 100.0%;">Instituto Privado La Sagrada Familia - Anexo<br>Aníbal Ponce 1262</div>`)[0];
+            popup_5669c808d59729b0f39f4215eaee2ca1.setContent(html_94b25c5737a34c5dcd3c960f6d57adae);
+        
+
+        marker_1ca281fe19c9ee9e16332732f47df0ba.bindPopup(popup_5669c808d59729b0f39f4215eaee2ca1)
+        ;
+
+        
+    
+    
+            marker_1ca281fe19c9ee9e16332732f47df0ba.bindTooltip(
+                `<div>
+                     Instituto Privado La Sagrada Familia - Anexo
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_2217a6c17e14e52d6d9665c5420b2ee8 = L.marker(
+                [-33.1163, -64.3628],
+                {}
+            ).addTo(map_b502a916b6243aa851ebef6c081bed59);
+        
+    
+        var popup_5242bc97b839d480c198fc16e890cc58 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_84b2feaa35538009b0cfee7136532f68 = $(`<div id="html_84b2feaa35538009b0cfee7136532f68" style="width: 100.0%; height: 100.0%;">Escuela de Agronomía de Río Cuarto<br>Muniagni</div>`)[0];
+            popup_5242bc97b839d480c198fc16e890cc58.setContent(html_84b2feaa35538009b0cfee7136532f68);
+        
+
+        marker_2217a6c17e14e52d6d9665c5420b2ee8.bindPopup(popup_5242bc97b839d480c198fc16e890cc58)
+        ;
+
+        
+    
+    
+            marker_2217a6c17e14e52d6d9665c5420b2ee8.bindTooltip(
+                `<div>
+                     Escuela de Agronomía de Río Cuarto
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_cc89ad03cb3852e9d0d329ab0726ee76 = L.marker(
+                [-33.1223, -64.3453],
+                {}
+            ).addTo(map_b502a916b6243aa851ebef6c081bed59);
+        
+    
+        var popup_7d1b5be1e0d22d3a853e5403a3e4d474 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_88471e00fb0049465a365663e64c2781 = $(`<div id="html_88471e00fb0049465a365663e64c2781" style="width: 100.0%; height: 100.0%;">Instituto Nuestra Señora del Carmen<br>Baigorria 373</div>`)[0];
+            popup_7d1b5be1e0d22d3a853e5403a3e4d474.setContent(html_88471e00fb0049465a365663e64c2781);
+        
+
+        marker_cc89ad03cb3852e9d0d329ab0726ee76.bindPopup(popup_7d1b5be1e0d22d3a853e5403a3e4d474)
+        ;
+
+        
+    
+    
+            marker_cc89ad03cb3852e9d0d329ab0726ee76.bindTooltip(
+                `<div>
+                     Instituto Nuestra Señora del Carmen
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_a2e9ecb20e8df9aae8f35240e35a272e = L.marker(
+                [-33.1205, -64.3421],
+                {}
+            ).addTo(map_b502a916b6243aa851ebef6c081bed59);
+        
+    
+        var popup_449b6bf19ae4fac40d6817905a61fcef = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b53191b293fdbb9039bc9af1a45390bf = $(`<div id="html_b53191b293fdbb9039bc9af1a45390bf" style="width: 100.0%; height: 100.0%;">Colegio Santa Eufrasia<br>María Olguín 953</div>`)[0];
+            popup_449b6bf19ae4fac40d6817905a61fcef.setContent(html_b53191b293fdbb9039bc9af1a45390bf);
+        
+
+        marker_a2e9ecb20e8df9aae8f35240e35a272e.bindPopup(popup_449b6bf19ae4fac40d6817905a61fcef)
+        ;
+
+        
+    
+    
+            marker_a2e9ecb20e8df9aae8f35240e35a272e.bindTooltip(
+                `<div>
+                     Colegio Santa Eufrasia
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_95695bdde091379562e98818362c67a2 = L.marker(
+                [-33.122, -64.3512],
+                {}
+            ).addTo(map_b502a916b6243aa851ebef6c081bed59);
+        
+    
+        var popup_ac9ce7a75e78fa321cbbea06ec192c51 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_64aab6935493e56d51a4e90894edab07 = $(`<div id="html_64aab6935493e56d51a4e90894edab07" style="width: 100.0%; height: 100.0%;">Colegio Escuelas Pías<br>Av. General Roca 701</div>`)[0];
+            popup_ac9ce7a75e78fa321cbbea06ec192c51.setContent(html_64aab6935493e56d51a4e90894edab07);
+        
+
+        marker_95695bdde091379562e98818362c67a2.bindPopup(popup_ac9ce7a75e78fa321cbbea06ec192c51)
+        ;
+
+        
+    
+    
+            marker_95695bdde091379562e98818362c67a2.bindTooltip(
+                `<div>
+                     Colegio Escuelas Pías
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_de4844a3afee320d7316bd34befda6ba = L.marker(
+                [-33.1262, -64.348],
+                {}
+            ).addTo(map_b502a916b6243aa851ebef6c081bed59);
+        
+    
+        var popup_deaf02fcb517fb0db9aee3f5d5db622b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d50823dbbae021af42c7139a80bf37c0 = $(`<div id="html_d50823dbbae021af42c7139a80bf37c0" style="width: 100.0%; height: 100.0%;">Colegio Parroquial Nuestra Señora de la Merced<br>Belisario Roldán 275</div>`)[0];
+            popup_deaf02fcb517fb0db9aee3f5d5db622b.setContent(html_d50823dbbae021af42c7139a80bf37c0);
+        
+
+        marker_de4844a3afee320d7316bd34befda6ba.bindPopup(popup_deaf02fcb517fb0db9aee3f5d5db622b)
+        ;
+
+        
+    
+    
+            marker_de4844a3afee320d7316bd34befda6ba.bindTooltip(
+                `<div>
+                     Colegio Parroquial Nuestra Señora de la Merced
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_4af3f175801eccccad6f4dc2fb1197e4 = L.marker(
+                [-33.125, -64.3478],
+                {}
+            ).addTo(map_b502a916b6243aa851ebef6c081bed59);
+        
+    
+        var popup_5e73d1c56617b55282ada822c62c70ce = L.popup({"maxWidth": "100%"});
+
+        
+            var html_131e74051f6b42d69a2a3cb11e01fd03 = $(`<div id="html_131e74051f6b42d69a2a3cb11e01fd03" style="width: 100.0%; height: 100.0%;">Colegio María Benita Arias<br>Montevideo 751</div>`)[0];
+            popup_5e73d1c56617b55282ada822c62c70ce.setContent(html_131e74051f6b42d69a2a3cb11e01fd03);
+        
+
+        marker_4af3f175801eccccad6f4dc2fb1197e4.bindPopup(popup_5e73d1c56617b55282ada822c62c70ce)
+        ;
+
+        
+    
+    
+            marker_4af3f175801eccccad6f4dc2fb1197e4.bindTooltip(
+                `<div>
+                     Colegio María Benita Arias
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_a6d349490892fce61f442c4d79edc942 = L.marker(
+                [-33.1159, -64.3553],
+                {}
+            ).addTo(map_b502a916b6243aa851ebef6c081bed59);
+        
+    
+        var popup_7d6da98963353f0e2fcc8a3a9fc6caaf = L.popup({"maxWidth": "100%"});
+
+        
+            var html_0fe259f80619b1c2cb051a33d535a3ea = $(`<div id="html_0fe259f80619b1c2cb051a33d535a3ea" style="width: 100.0%; height: 100.0%;">Instituto San Ignacio de Loyola<br>Guardias Nacionales 1400</div>`)[0];
+            popup_7d6da98963353f0e2fcc8a3a9fc6caaf.setContent(html_0fe259f80619b1c2cb051a33d535a3ea);
+        
+
+        marker_a6d349490892fce61f442c4d79edc942.bindPopup(popup_7d6da98963353f0e2fcc8a3a9fc6caaf)
+        ;
+
+        
+    
+    
+            marker_a6d349490892fce61f442c4d79edc942.bindTooltip(
+                `<div>
+                     Instituto San Ignacio de Loyola
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_b9ff5f37dfa0723a41d4bae1ca5af303 = L.marker(
+                [-33.1101, -64.3492],
+                {}
+            ).addTo(map_b502a916b6243aa851ebef6c081bed59);
+        
+    
+        var popup_845223eedb2d0855c6e3947cf08ffc66 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_db8dca3c58dd32603fa8be47e704cca8 = $(`<div id="html_db8dca3c58dd32603fa8be47e704cca8" style="width: 100.0%; height: 100.0%;">Escuela de Agronomía de Río Cuarto<br>Eliseo Sánchez 235</div>`)[0];
+            popup_845223eedb2d0855c6e3947cf08ffc66.setContent(html_db8dca3c58dd32603fa8be47e704cca8);
+        
+
+        marker_b9ff5f37dfa0723a41d4bae1ca5af303.bindPopup(popup_845223eedb2d0855c6e3947cf08ffc66)
+        ;
+
+        
+    
+    
+            marker_b9ff5f37dfa0723a41d4bae1ca5af303.bindTooltip(
+                `<div>
+                     Escuela de Agronomía de Río Cuarto
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_839c9e50375c94890021886f43a497c2 = L.marker(
+                [-33.1148, -64.3479],
+                {}
+            ).addTo(map_b502a916b6243aa851ebef6c081bed59);
+        
+    
+        var popup_4d984f710d547165e829938f91463673 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b035d705778d44dd63fc47fdd008d4d6 = $(`<div id="html_b035d705778d44dd63fc47fdd008d4d6" style="width: 100.0%; height: 100.0%;">Comunidad Educativa Ática<br>Isabel La Católica 735</div>`)[0];
+            popup_4d984f710d547165e829938f91463673.setContent(html_b035d705778d44dd63fc47fdd008d4d6);
+        
+
+        marker_839c9e50375c94890021886f43a497c2.bindPopup(popup_4d984f710d547165e829938f91463673)
+        ;
+
+        
+    
+    
+            marker_839c9e50375c94890021886f43a497c2.bindTooltip(
+                `<div>
+                     Comunidad Educativa Ática
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_bbf325967c338fc494044f62a46973b4 = L.marker(
+                [-33.1181, -64.3588],
+                {}
+            ).addTo(map_b502a916b6243aa851ebef6c081bed59);
+        
+    
+        var popup_21174e4fa4d9aff327ef3dd446f59d2c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_453e063ead382d5ae293c4d58f781823 = $(`<div id="html_453e063ead382d5ae293c4d58f781823" style="width: 100.0%; height: 100.0%;">Instituto Educativo Jockey Club Río Cuarto<br>Presidente Perón Oeste 1605</div>`)[0];
+            popup_21174e4fa4d9aff327ef3dd446f59d2c.setContent(html_453e063ead382d5ae293c4d58f781823);
+        
+
+        marker_bbf325967c338fc494044f62a46973b4.bindPopup(popup_21174e4fa4d9aff327ef3dd446f59d2c)
+        ;
+
+        
+    
+    
+            marker_bbf325967c338fc494044f62a46973b4.bindTooltip(
+                `<div>
+                     Instituto Educativo Jockey Club Río Cuarto
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ef3519b37248751c5ab2300a3af9d080 = L.marker(
+                [-33.1259, -64.3441],
+                {}
+            ).addTo(map_b502a916b6243aa851ebef6c081bed59);
+        
+    
+        var popup_1be975feb6a116dca5a4eaebced9498e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ae006763522b573e6d7be7912def81b3 = $(`<div id="html_ae006763522b573e6d7be7912def81b3" style="width: 100.0%; height: 100.0%;">Instituto San Francisco de Asís<br>Víctor Hugo 885</div>`)[0];
+            popup_1be975feb6a116dca5a4eaebced9498e.setContent(html_ae006763522b573e6d7be7912def81b3);
+        
+
+        marker_ef3519b37248751c5ab2300a3af9d080.bindPopup(popup_1be975feb6a116dca5a4eaebced9498e)
+        ;
+
+        
+    
+    
+            marker_ef3519b37248751c5ab2300a3af9d080.bindTooltip(
+                `<div>
+                     Instituto San Francisco de Asís
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_40fa2e0cad8347eb575428cbb3c90e84 = L.marker(
+                [-33.1109, -64.361],
+                {}
+            ).addTo(map_b502a916b6243aa851ebef6c081bed59);
+        
+    
+        var popup_17e7848adabcc814cdc4462a31108602 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_46924ad9fb3cf6bc2fa8b12603b8e896 = $(`<div id="html_46924ad9fb3cf6bc2fa8b12603b8e896" style="width: 100.0%; height: 100.0%;">Instituto Leonardo Da Vinci<br>Glauce Baldovín Industrial</div>`)[0];
+            popup_17e7848adabcc814cdc4462a31108602.setContent(html_46924ad9fb3cf6bc2fa8b12603b8e896);
+        
+
+        marker_40fa2e0cad8347eb575428cbb3c90e84.bindPopup(popup_17e7848adabcc814cdc4462a31108602)
+        ;
+
+        
+    
+    
+            marker_40fa2e0cad8347eb575428cbb3c90e84.bindTooltip(
+                `<div>
+                     Instituto Leonardo Da Vinci
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_5813ce00e216c47e368f6f9254ab050f = L.marker(
+                [-33.115, -64.3625],
+                {}
+            ).addTo(map_b502a916b6243aa851ebef6c081bed59);
+        
+    
+        var popup_8fa7d8f661966fe635b2d60f40cf471e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c57aa4612bdbb10884fe24ace72ad92d = $(`<div id="html_c57aa4612bdbb10884fe24ace72ad92d" style="width: 100.0%; height: 100.0%;">Colegio Ítalo Argentino Dante Alighieri<br>Lorenzo Suárez de Figueroa 2051</div>`)[0];
+            popup_8fa7d8f661966fe635b2d60f40cf471e.setContent(html_c57aa4612bdbb10884fe24ace72ad92d);
+        
+
+        marker_5813ce00e216c47e368f6f9254ab050f.bindPopup(popup_8fa7d8f661966fe635b2d60f40cf471e)
+        ;
+
+        
+    
+    
+            marker_5813ce00e216c47e368f6f9254ab050f.bindTooltip(
+                `<div>
+                     Colegio Ítalo Argentino Dante Alighieri
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_2599ef991b9e14d644e0045e90310310 = L.marker(
+                [-33.1503, -64.3956],
+                {}
+            ).addTo(map_b502a916b6243aa851ebef6c081bed59);
+        
+    
+        var popup_22dc5f1feaa90b40662d9f5bd28a2edc = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b23b02a744eec40f28e38017da15a8cb = $(`<div id="html_b23b02a744eec40f28e38017da15a8cb" style="width: 100.0%; height: 100.0%;">C.I.T.E.R. Ramón Artemio Staffolani<br>Ruta 8 Km 594</div>`)[0];
+            popup_22dc5f1feaa90b40662d9f5bd28a2edc.setContent(html_b23b02a744eec40f28e38017da15a8cb);
+        
+
+        marker_2599ef991b9e14d644e0045e90310310.bindPopup(popup_22dc5f1feaa90b40662d9f5bd28a2edc)
+        ;
+
+        
+    
+    
+            marker_2599ef991b9e14d644e0045e90310310.bindTooltip(
+                `<div>
+                     C.I.T.E.R. Ramón Artemio Staffolani
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_6697cba3208cb193b4502f1e62b58d90 = L.marker(
+                [-33.142, -64.37],
+                {}
+            ).addTo(map_b502a916b6243aa851ebef6c081bed59);
+        
+    
+        var popup_acf5d4d612ff202835ea760641b0ab0f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_3d9204f237872ada85a268620e34867e = $(`<div id="html_3d9204f237872ada85a268620e34867e" style="width: 100.0%; height: 100.0%;">Instituto Educativa Soc. Rural<br>Av. Sabattini 3801</div>`)[0];
+            popup_acf5d4d612ff202835ea760641b0ab0f.setContent(html_3d9204f237872ada85a268620e34867e);
+        
+
+        marker_6697cba3208cb193b4502f1e62b58d90.bindPopup(popup_acf5d4d612ff202835ea760641b0ab0f)
+        ;
+
+        
+    
+    
+            marker_6697cba3208cb193b4502f1e62b58d90.bindTooltip(
+                `<div>
+                     Instituto Educativa Soc. Rural
+                 </div>`,
+                {"sticky": true}
+            );
+        
+</script>
+</html>
